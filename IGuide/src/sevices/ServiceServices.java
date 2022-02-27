@@ -37,8 +37,8 @@ public class ServiceServices implements IService<Service> {
     public void AjouterService(Service s) throws SQLException {
         String req = "INSERT INTO `service` (`nom`, `nombre_max`, `datedebut`, `datefin`, `cible`, `lieu`, `categorie`, `prix`) VALUES ( '"
                 + s.getNom() + "', '" + s.getNombre_max() +"', '"+ s.getDatedebut()+  "', '" +s.getDatefin()+  "', '" + s.getCible()+  "','"+ s.getLieu()+ "', '"+ s.getCategorie()+ "', '"+ s.getPrix()+ "') ";
-        PreparedStatement ps = connexion.prepareStatement(req);
-        ps.executeUpdate(req);
+        stm = connexion.createStatement();
+        stm.executeUpdate(req);
     }
 
    public List<Service> AfficherService() throws SQLException{

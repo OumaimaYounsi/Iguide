@@ -31,7 +31,7 @@ public class IGuide {
        // Service s = new Service("a", 10, Date.valueOf(d), Date.valueOf(d1), "cible", "Lieu", Categorie.a,10.9f);
         //Service s1 = new Service("b", 5, Date.valueOf(d), Date.valueOf(d), "cible1","lieu1", Categorie.b, 20.3f);
         
-        Service s2 = new Service( "cinema", 50, Date.valueOf(d), Date.valueOf(d1), "cible", "tunis city", Categorie.c, (float) 15.5);
+        Service s2 = new Service( "cine", 50, Date.valueOf(d), Date.valueOf(d1), "cible1", "azur city", Categorie.c, (float) 13.5);
 
         ServiceServices ss = new ServiceServices();
 
