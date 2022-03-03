@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="772.0" prefWidth="1220.0" style="-fx-border-color: #D57C64;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AdministrationController">
+   <children>
+      <AnchorPane layoutX="-4.0" prefHeight="685.0" prefWidth="300.0" style="-fx-background-color: #D57C64;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutX="1.0" layoutY="215.0" prefHeight="439.0" prefWidth="299.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="299.0" style="-fx-background-color: #D57C64; -fx-font-family: System bold; -fx-font-size: 16px;" text="Users">
+                     <graphic>
+                        <Icon content="PEOPLE" />
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="68.0" prefWidth="299.0" style="-fx-background-color: #D57C64;" text="Service">
+                     <graphic>
+                        <Icon content="SHOP" />
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="299.0" style="-fx-background-color: #D57C64;" text="Packs">
+                     <graphic>
+                        <Icon content="PAGES" />
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="65.0" prefWidth="299.0" style="-fx-background-color: #D57C64; -fx-font-family: System; -fx-font-size: 16px;" text="Reservation">
+                     <graphic>
+                        <Icon content="NOTE_ADD" />
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="299.0" style="-fx-background-color: #D57C64;" text="Raclamation">
+                     <graphic>
+                        <Icon content="WARNING" />
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="299.0" style="-fx-background-color: #D57C64;" text="Setting">
+                     <graphic>
+                        <Icon content="SETTINGS" />
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="293.0" layoutY="47.0" prefHeight="119.0" prefWidth="830.0" style="-fx-background-color: #D57C64;" AnchorPane.leftAnchor="293.0" AnchorPane.rightAnchor="1.0">
+         <children>
+            <Text fill="WHITE" layoutX="78.0" layoutY="46.0" strokeDashOffset="10.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: System; -fx-font-size: 18px;" styleClass="f" text="/Administration /Packs" wrappingWidth="238.9831027984619">
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
+            <Text fill="WHITE" layoutX="78.0" layoutY="90.0" strokeDashOffset="10.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: System; -fx-font-size: 28px;" styleClass="f" text="Packs" wrappingWidth="130.9830722808838">
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TableView layoutX="297.0" layoutY="380.0" prefHeight="392.0" prefWidth="790.0" AnchorPane.leftAnchor="297.0" AnchorPane.rightAnchor="6.0">
+        <columns>
+          <TableColumn prefWidth="179.99993896484375" resizable="false" style="-fx-background-color: #D57C64;" text="Id" />
+          <TableColumn prefWidth="233.00003051757812" style="-fx-background-color: #B86E5A;" text="Nom" />
+            <TableColumn prefWidth="243.0" style="-fx-background-color: #D57C64;" text="Description" />
+            <TableColumn prefWidth="257.0" style="-fx-background-color: #B86E5A;" text="Services" />
+        </columns>
+      </TableView>
+      <TextField layoutX="793.0" layoutY="199.0" prefHeight="40.0" prefWidth="249.0" promptText="Search" style="-fx-background-size: 50px;" AnchorPane.rightAnchor="32.0" />
+      <Button layoutX="361.0" layoutY="318.0" mnemonicParsing="false" onAction="#AjouterPack" prefHeight="50.0" prefWidth="249.0" style="-fx-background-color: #D57C64; -fx-font-family: System bold; -fx-font-size: 16px;" text="Ajouter Pack" AnchorPane.rightAnchor="610.0">
+         <graphic>
+            <Icon content="ADD" />
+         </graphic>
+      </Button>
+      <Button layoutX="688.0" layoutY="318.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="215.0" style="-fx-background-color: #D57C64; -fx-font-family: System bold; -fx-font-size: 16px;" text="Supprimer Pack" AnchorPane.rightAnchor="317.0">
+         <graphic>
+            <Icon content="DELETE" />
+         </graphic>
+      </Button>
+      <Button layoutX="955.0" layoutY="318.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="215.0" style="-fx-background-color: #D57C64; -fx-font-family: System bold; -fx-font-size: 16px;" text="Modifier Packs" AnchorPane.rightAnchor="50.0">
+         <graphic>
+            <Icon content="UPDATE" />
+         </graphic>
+      </Button>
+      <TextField fx:id="name" layoutX="325.0" layoutY="192.0" prefHeight="40.0" prefWidth="320.0" promptText="Name" style="-fx-background-size: 50px;" />
+      <TextField fx:id="desc" layoutX="325.0" layoutY="255.0" prefHeight="40.0" prefWidth="320.0" promptText="Description" style="-fx-background-size: 50px;" />
+   </children>
+</AnchorPane>
