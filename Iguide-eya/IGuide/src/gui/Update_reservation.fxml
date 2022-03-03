@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Update_reservationController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="477.0" prefWidth="727.0" style="-fx-background-color: #67405F;">
+         <children>
+            <AnchorPane layoutX="4.0" layoutY="2.0" prefHeight="471.0" prefWidth="200.0" style="-fx-background-color: #E7BCB8;">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="168.0" layoutX="10.0" layoutY="27.0">
+                     <image>
+                        <Image url="@logo-2.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="Profil" layoutX="30.0" layoutY="172.0" mnemonicParsing="false" onAction="#GoToProfil" prefHeight="39.0" prefWidth="144.0" style="-fx-background-color: #67405F;" text="Profil" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Services" layoutX="30.0" layoutY="239.0" mnemonicParsing="false" onAction="#GoToServices" prefHeight="39.0" prefWidth="144.0" style="-fx-background-color: #67405F;" text="Services" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Packs" layoutX="30.0" layoutY="301.0" mnemonicParsing="false" onAction="#GoToPacks" prefHeight="39.0" prefWidth="144.0" style="-fx-background-color: #67405F;" text="Packs" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Label layoutX="315.0" layoutY="50.0" prefHeight="47.0" prefWidth="317.0" text="Modifier Une Réservation">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="424.0" layoutY="353.0" mnemonicParsing="false" style="-fx-background-color: #E7BCB8;" text="Modifier" textFill="#67405f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="250.0" layoutY="97.0" />
+            <DatePicker fx:id="edit_date" layoutX="364.0" layoutY="311.0" onAction="#Modifier" promptText="Changer de date" />
+            <TextArea layoutX="336.0" layoutY="193.0" prefHeight="58.0" prefWidth="275.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

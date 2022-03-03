@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="882.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Make_reservationController">
+   <children>
+      <AnchorPane prefHeight="590.0" prefWidth="228.0" style="-fx-background-color: #E7BCB8;">
+         <children>
+            <ImageView fitHeight="102.0" fitWidth="171.0" layoutX="28.0" layoutY="30.0">
+               <image>
+                  <Image url="@logo-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="189.0" fitWidth="126.0" layoutX="-15.0" layoutY="394.0">
+               <image>
+                  <Image url="@guide.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Profil" layoutX="42.0" layoutY="191.0" mnemonicParsing="false" onAction="#GoToProfil" prefHeight="39.0" prefWidth="144.0" style="-fx-background-color: #67405F;" text="Profil" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Services" layoutX="42.0" layoutY="258.0" mnemonicParsing="false" onAction="#GoToServices" prefHeight="39.0" prefWidth="144.0" style="-fx-background-color: #67405F;" text="Services" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Packs" layoutX="42.0" layoutY="320.0" mnemonicParsing="false" onAction="#GoToPacks" prefHeight="39.0" prefWidth="144.0" style="-fx-background-color: #67405F;" text="Packs" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="228.0" prefHeight="590.0" prefWidth="658.0" style="-fx-background-color: #67405F;">
+         <children>
+            <Label layoutX="157.0" layoutY="21.0" prefHeight="82.0" prefWidth="331.0" text="Réserver un service" textFill="#e7bcb8">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="reservation1" layoutX="439.0" layoutY="233.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="36.0" prefWidth="137.0" style="-fx-background-color: #E7BCB8;" text="Réserver">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="73.0" fitWidth="369.0" layoutX="135.0" layoutY="29.0">
+               <image>
+                  <Image url="@cadre.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="supprmer" layoutX="439.0" layoutY="382.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="36.0" prefWidth="137.0" style="-fx-background-color: #E7BCB8;" text="Supprimer">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="modifier" layoutX="439.0" layoutY="454.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="36.0" prefWidth="137.0" style="-fx-background-color: #E7BCB8;" text="Modifier">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="zone_Affichage" layoutX="53.0" layoutY="231.0" prefHeight="268.0" prefWidth="331.0" />
+            <Button fx:id="Afficher" layoutX="437.0" layoutY="310.0" mnemonicParsing="false" onAction="#Afficher" prefHeight="36.0" prefWidth="137.0" style="-fx-background-color: #E7BCB8;" text="Afficher">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
