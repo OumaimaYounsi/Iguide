@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="741.0" prefWidth="1321.0" style="-fx-background-color: #e7bcb8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXML_serviceController">
+    <children>
+        <VBox layoutX="490.0" layoutY="57.0" prefHeight="367.0" prefWidth="143.0" spacing="20.0">
+            <children>
+                <Label text="ID_service" textFill="#67405f">
+                    <font>
+                        <Font name="Times New Roman" size="20.0" />
+                    </font>
+                </Label>
+                <Label text="Nom" textFill="#67405f">
+                    <font>
+                        <Font name="Times New Roman" size="20.0" />
+                    </font>
+                </Label>
+                <Label text="Nombre_max" textFill="#67405f">
+                    <font>
+                        <Font name="Times New Roman" size="20.0" />
+                    </font>
+                </Label>
+                <Label text="Date_debut" textFill="#67405f">
+                    <font>
+                        <Font name="Times New Roman" size="20.0" />
+                    </font>
+                </Label>
+                <Label text="Date_fin" textFill="#67405f">
+                    <font>
+                        <Font name="Times New Roman" size="20.0" />
+                    </font>
+                </Label>
+                <Label text="Lieu" textFill="#67405f">
+                    <font>
+                        <Font name="Times New Roman" size="20.0" />
+                    </font>
+                </Label>
+                <Label text="Prix" textFill="#67405f">
+                    <font>
+                        <Font name="Times New Roman" size="20.0" />
+                    </font>
+                </Label>
+                <Label text="Catégorie" textFill="#67405f">
+                    <font>
+                        <Font name="Times New Roman" size="20.0" />
+                    </font>
+                </Label>
+                <Label text="Cible" textFill="#67405f">
+                    <font>
+                        <Font name="Times New Roman" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox layoutX="633.0" layoutY="57.0" prefHeight="367.0" prefWidth="288.0" spacing="10.0">
+            <children>
+                <TextField fx:id="tfid" />
+                <TextField fx:id="tfnom" />
+                <TextField fx:id="tfnombremax" />
+                <TextField fx:id="tfdatedebut" />
+                <TextField fx:id="tfdatefin" />
+                <TextField fx:id="tflieu" />
+                <TextField fx:id="tfprix" />
+                <TextField fx:id="tfcategorie" />
+                <TextField fx:id="tfcible" />
+            </children>
+        </VBox>
+        <Button fx:id="btnajouter" layoutX="1008.0" layoutY="91.0" mnemonicParsing="false" onAction="#HundleButtonAction" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #67405f;" text="Ajouter" textFill="WHITE" />
+        <Button fx:id="btnmodifier" layoutX="1014.0" layoutY="196.0" mnemonicParsing="false" onAction="#HundleButtonAction" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #67405f;" text="Modifier" textFill="WHITE" />
+        <Button fx:id="btnsupprimer" layoutX="1014.0" layoutY="312.0" mnemonicParsing="false" onAction="#HundleButtonAction" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #67405f;" text="Supprimer" textFill="WHITE" />
+        <ButtonBar layoutX="217.0" layoutY="645.0" prefHeight="40.0" prefWidth="200.0" />
+      <TableView fx:id="tvservice1" layoutX="4.0" layoutY="510.0" prefHeight="217.0" prefWidth="1312.0">
+         <columns>
+            <TableColumn fx:id="colid1" prefWidth="150.0" text="ID_service" />
+            <TableColumn fx:id="colnom1" prefWidth="150.0" text="Nom" />
+            <TableColumn fx:id="colnombremax1" prefWidth="150.0" text="Nombre_max" />
+            <TableColumn fx:id="coldatedebut1" prefWidth="150.0" text="Date_debut" />
+            <TableColumn fx:id="coldatefin1" prefWidth="150.0" text="Date_fin" />
+            <TableColumn fx:id="collieu1" prefWidth="150.0" text="lieu" />
+            <TableColumn fx:id="colprix1" prefWidth="150.0" text="Prix" />
+            <TableColumn fx:id="colcategorie1" prefWidth="150.0" text="Catégorie" />
+            <TableColumn fx:id="colcible1" prefWidth="150.0" text="cible" />
+         </columns>
+      </TableView>
+      <HBox layoutX="14.0" layoutY="16.0" prefHeight="177.0" prefWidth="366.0">
+         <children>
+            <ImageView fitHeight="177.0" fitWidth="407.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/272273434_976361596651019_8757673794751794817_n.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>
