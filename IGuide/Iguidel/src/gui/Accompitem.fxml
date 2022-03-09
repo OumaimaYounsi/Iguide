@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane prefHeight="415.0" prefWidth="366.0" stylesheets="@../utils/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AccompitemController">
+   <children>
+      <Label fx:id="itemAccompNom" alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="179.0" prefHeight="33.0" prefWidth="248.0" text="Mohamed Ali " textFill="#67405f">
+         <font>
+            <Font name="Cambria Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="reserverButton" layoutX="206.0" layoutY="343.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="120.0" style="-fx-background-color: #67405f; -fx-font-size: 18px;" styleClass="search-button" stylesheets="@../utils/Style.css" text="Réserver" textFill="WHITE" />
+      <Button fx:id="detailButton" layoutX="45.0" layoutY="343.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="120.0" style="-fx-background-color: #67405f; -fx-font-size: 18px;" styleClass="search-button" stylesheets="@../utils/Style.css" text="Profil" textAlignment="CENTER" textFill="WHITE" />
+      <AnchorPane prefHeight="60.0" prefWidth="366.0" styleClass="user-header" stylesheets="@../utils/Style.css" />
+      <AnchorPane layoutX="105.0" layoutY="14.0" prefHeight="165.0" prefWidth="177.0" styleClass="user-img" stylesheets="@../utils/Style.css">
+         <children>
+            <ImageView fx:id="Accompitemimages" fitHeight="150.0" fitWidth="177.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../utils/user1-modified.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <HBox layoutY="266.0" prefHeight="100.0" prefWidth="338.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="192.0">
+               <children>
+                  <Label fx:id="itemPackNom1" alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="248.0" text="Expérience" textFill="#67405f">
+                     <font>
+                        <Font name="Cambria Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="itemAccompExp" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="33.0" prefWidth="248.0" text="10 ">
+                           <font>
+                              <Font name="Cambria Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemPackNom41" contentDisplay="CENTER" prefHeight="33.0" prefWidth="248.0" text="Ans">
+                           <font>
+                              <Font name="Cambria Bold" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="129.0">
+               <children>
+                  <Label fx:id="itemPackNom2" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="134.0" text="Tarif" textFill="#67405f">
+                     <font>
+                        <Font name="Cambria Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="74.0" prefWidth="193.0">
+                     <children>
+                        <Label fx:id="itemAccompTarif" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="33.0" prefWidth="207.0" text="100">
+                           <font>
+                              <Font name="Cambria Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemPackNom4" contentDisplay="CENTER" prefHeight="33.0" prefWidth="248.0" text="DT/Jour">
+                           <font>
+                              <Font name="Cambria Bold" size="21.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Rating layoutX="101.0" layoutY="212.0" prefHeight="38.0" prefWidth="248.0" />
+   </children>
+   <styleClass>
+      <String fx:value="chosen-card" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

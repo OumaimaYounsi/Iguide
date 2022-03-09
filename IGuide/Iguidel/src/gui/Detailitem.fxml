@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.DetailitemController">
+   <children>
+      <ImageView fx:id="itemPackImage" fitHeight="199.0" fitWidth="278.0" layoutX="39.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/valorant.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="56.0" layoutY="69.0" text="Nom Pack :" textFill="#6d177c">
+         <font>
+            <Font name="Cambria Math" size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="nomPack" layoutX="197.0" layoutY="69.0" prefHeight="30.0" prefWidth="253.0" text="Valorant compitition">
+         <font>
+            <Font name="Cambria Math" size="27.0" />
+         </font>
+      </Label>
+      <TextField layoutX="57.0" layoutY="322.0" prefHeight="55.0" prefWidth="628.0" promptText="Envoyer Votre Feedback" />
+      <JFXButton layoutX="329.0" layoutY="395.0" prefHeight="43.0" prefWidth="121.0" styleClass="search-button" stylesheets="@../utils/Style.css" text="Feedback" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="509.0" layoutY="63.0" onAction="#onClickReserver" prefHeight="43.0" prefWidth="172.0" styleClass="search-button" stylesheets="@../utils/Style.css" text="Réserver maintenant" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="descPack" layoutX="336.0" layoutY="113.0" prefHeight="184.0" prefWidth="346.0" text="Riot Games has announced that there will be a 'new tournament circuit' taking place in October of 2022 and that the VALORANT Challengers circuit will also be revamped for next year." wrapText="true">
+         <font>
+            <Font name="Cambria Math" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="688.0" layoutY="18.0" onAction="#closeDialog" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: FF0000;" stylesheets="@../utils/Style.css" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Rating fx:id="ratinggg" layoutX="56.0" layoutY="18.0" />
+      <JFXButton layoutX="248.0" layoutY="18.0" onAction="#rat" prefHeight="32.0" prefWidth="52.0" styleClass="search-button" stylesheets="@../utils/Style.css" text="&gt;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

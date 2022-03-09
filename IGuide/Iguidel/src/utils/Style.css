@@ -1,0 +1,72 @@
+.search-box{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius:100;
+}
+.trensparent{
+        -fx-background-color:rgba(0,0,0,0);
+
+}
+.search-button{
+    -fx-background-color:#67405f;
+    -fx-background-radius:30;
+    -fx-text-color:#FFFFFF;
+    
+}
+.buttonchat{
+        -fx-background-color:#67405f;
+            -fx-background-radius:50%;
+            -fx-text-size:20px;
+
+    
+}
+.buttonchat:hover{
+        -fx-background-color: #ffe436;
+            -fx-background-radius:50%;
+            -fx-text-size:20px;
+
+    
+}
+
+.menub{
+    
+}
+.menub:hover{
+       -fx-background-color:#67405f;
+}
+
+.shadow{
+        -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);
+}
+.chosen-fruit-card{
+     -fx-background-color:#FFFFFF;
+      -fx-background-radius:30;
+}
+.chosen-card{
+     -fx-background-color:#FFFFFF;
+      
+}
+.icon{
+    color: #FFFFFF;
+    size: 50px;
+}
+.critere-card{
+     -fx-background-color:#67405f;
+    -fx-background-radius:30;
+    
+}
+
+.media-card{
+         -fx-background-color:#67405f;
+
+    -fx-background-radius: 10%  50% 70%;
+}
+
+.user-header{
+
+ -fx-background-color:#67405f;
+ 
+}
+.user-img{
+    -fx-background-radius:50%;
+         -fx-background-color:#ffffff;
+}

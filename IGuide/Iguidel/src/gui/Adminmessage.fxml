@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="842.0" prefWidth="735.0" stylesheets="@../utils/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AdminmessageController">
+   <children>
+      <AnchorPane prefHeight="842.0" prefWidth="295.0" style="-fx-background-color: #EBC4C0;">
+         <children>
+            <ImageView fitHeight="119.0" fitWidth="200.0" layoutX="24.0" layoutY="29.0">
+               <image>
+                  <Image url="@../utils/Photo/272273434_976361596651019_8757673794751794817_n.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="295.0" layoutY="45.0" prefHeight="107.0" prefWidth="819.0">
+         <children>
+            <AnchorPane prefHeight="127.0" prefWidth="819.0" style="-fx-background-color: #EBC4C0;">
+               <children>
+                  <Label layoutX="29.0" layoutY="26.0" prefHeight="21.0" prefWidth="215.0" text="/Administration/Messagerie" textFill="#67405f">
+                     <font>
+                        <Font name="System Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="64.0" prefHeight="56.0" prefWidth="200.0" text="Messageries" textFill="#67405f">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="id_m" layoutX="308.0" layoutY="237.0" prefHeight="31.0" prefWidth="420.0" promptText="Id_message" />
+      <TextField fx:id="contenum" layoutX="308.0" layoutY="291.0" prefHeight="31.0" prefWidth="420.0" promptText="Contenu" />
+      <Label layoutX="308.0" layoutY="468.0" prefHeight="31.0" prefWidth="151.0" text="Recherche message :" />
+      <TextField fx:id="filterField" layoutX="482.0" layoutY="469.0" prefHeight="31.0" prefWidth="245.0" />
+      <TableView fx:id="tmessage" layoutX="338.0" layoutY="551.0" prefHeight="200.0" prefWidth="674.0">
+        <columns>
+          <TableColumn fx:id="id_mg" prefWidth="87.0" text="id_message" />
+          <TableColumn fx:id="con" prefWidth="196.0" text="Contenu" />
+            <TableColumn fx:id="date" prefWidth="159.0" text="date_message" />
+            <TableColumn fx:id="idue" prefWidth="105.0" text="id_u_envoyer" />
+            <TableColumn fx:id="idur" prefWidth="105.0" text="id_u_resevoir" />
+        </columns>
+      </TableView>
+      <Button fx:id="modifierm" layoutX="907.0" layoutY="245.0" mnemonicParsing="false" onAction="#mod_mes" prefHeight="31.0" prefWidth="151.0" styleClass="buttom" stylesheets="@../utils/Style.css" text="Modifier Message" textFill="WHITE" />
+      <Button fx:id="suprimerm" layoutX="907.0" layoutY="307.0" mnemonicParsing="false" onAction="#sup_mes" prefHeight="31.0" prefWidth="151.0" styleClass="buttom" stylesheets="@../utils/Style.css" text="Suprimer Message" textFill="WHITE" />
+      <ImageView fx:id="ref" fitHeight="42.0" fitWidth="53.0" layoutX="1019.0" layoutY="751.0" onMouseClicked="#ref">
+         <image>
+            <Image url="@../utils/Photo/ref.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

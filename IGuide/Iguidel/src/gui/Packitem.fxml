@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="354.0" prefWidth="285.0" stylesheets="@../utils/Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.PackitemController">
+   <children>
+      <Label fx:id="itemPackNom" alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="14.0" prefHeight="33.0" prefWidth="248.0" text="Rondonné" textFill="#67405f">
+         <font>
+            <Font name="Cambria" size="21.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="itemPackImage" fitHeight="213.0" fitWidth="249.0" layoutX="19.0" layoutY="47.0" pickOnBounds="true">
+         <image>
+            <Image url="@../utils/defaut-ffrandonnee.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="reserverButton" layoutX="161.0" layoutY="286.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #67405f;" styleClass="search-button" stylesheets="@../utils/Style.css" text="Réserver" textFill="WHITE" />
+      <Button fx:id="detailButton" layoutX="29.0" layoutY="286.0" mnemonicParsing="false" onAction="#ClickItemPack" prefHeight="41.0" prefWidth="105.0" style="-fx-background-color: #67405f;" styleClass="search-button" stylesheets="@../utils/Style.css" text="Détails" textFill="WHITE" />
+   </children>
+   <styleClass>
+      <String fx:value="chosen-fruit-card" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

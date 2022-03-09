@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.PackstatController">
+   <children>
+      <Label layoutX="306.0" layoutY="43.0" prefHeight="50.0" prefWidth="189.0" text="Statistiques">
+         <font>
+            <Font name="Arial Narrow Italic" size="42.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pieChart" layoutX="1.0" layoutY="130.0" prefHeight="570.0" prefWidth="800.0" />
+      <JFXButton layoutX="724.0" layoutY="28.0" onAction="#closeDialog" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: FF0000;" stylesheets="@../utils/Style.css" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

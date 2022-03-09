@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AcceilController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="179.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="437.0" fitWidth="231.0" layoutY="-4.0">
+               <image>
+                  <Image url="@img/login3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="608.0" style="-fx-background-color: #67405F;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="client" layoutX="152.0" layoutY="122.0" mnemonicParsing="false" onAction="#cclient" prefHeight="31.0" prefWidth="267.0" style="-fx-background-color: #B86E5A;" text="Client" textFill="WHITE" />
+            <Button fx:id="accompagnant" layoutX="152.0" layoutY="185.0" mnemonicParsing="false" onAction="#caccompagnant" prefHeight="31.0" prefWidth="270.0" style="-fx-background-color: #B86E5A;" text="Accompagnant" textFill="WHITE" />
+            <Button fx:id="proprietere" layoutX="152.0" layoutY="246.0" mnemonicParsing="false" onAction="#cproprietere" prefHeight="31.0" prefWidth="272.0" style="-fx-background-color: #B86E5A;" text="Proprietere d'un espace" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

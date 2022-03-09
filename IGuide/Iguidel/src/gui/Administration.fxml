@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="772.0" prefWidth="1220.0" style="-fx-border-color: #D57C64;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AdministrationController">
+   <children>
+      <StackPane fx:id="stackPane" layoutX="296.0" layoutY="-9.0" prefHeight="784.0" prefWidth="925.0" />
+      <AnchorPane layoutX="-4.0" prefHeight="685.0" prefWidth="300.0" style="-fx-background-color: #EBC4C0;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../utils/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="294.0" layoutY="18.0" prefHeight="109.0" prefWidth="925.0" style="-fx-background-color: #EBC4C0;" AnchorPane.leftAnchor="293.0" AnchorPane.rightAnchor="5.0">
+         <children>
+            <Text fill="#67405f" layoutX="72.0" layoutY="33.0" strokeDashOffset="10.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: System; -fx-font-size: 18px;" styleClass="f" text="/Administration /Packs" wrappingWidth="238.9831027984619">
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
+            <Text fill="#67405f" layoutX="72.0" layoutY="76.0" strokeDashOffset="10.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: System; -fx-font-size: 28px;" styleClass="f" text="Packs" wrappingWidth="130.9830722808838">
+               <effect>
+                  <Blend />
+               </effect>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="packsTable" focusTraversable="false" layoutX="297.0" layoutY="380.0" onMouseClicked="#click" prefHeight="392.0" prefWidth="790.0" AnchorPane.leftAnchor="297.0" AnchorPane.rightAnchor="6.0">
+        <columns>
+          <TableColumn fx:id="nameid" prefWidth="431.333251953125" text="Nom" />
+            <TableColumn fx:id="descid" prefWidth="483.6668701171875" text="Description" />
+        </columns>
+      </TableView>
+      <Button layoutX="955.0" layoutY="318.0" mnemonicParsing="false" onAction="#ModifierPack" prefHeight="50.0" prefWidth="215.0" style="-fx-background-color: #EBC4C0; -fx-font-family: System bold; -fx-font-size: 16px;" text="Modifier Packs">
+         <graphic>
+         </graphic>
+      </Button>
+      <JFXButton layoutX="954.0" layoutY="196.0" onAction="#AjouterPack" prefHeight="50.0" prefWidth="215.0" style="-fx-background-color: #EBC4C0; -fx-font-size: 16px;" text="Ajouter Pack" />
+      <VBox layoutX="-3.0" layoutY="235.0" prefHeight="439.0" prefWidth="300.0">
+         <children>
+            <JFXButton buttonType="RAISED" prefHeight="72.0" prefWidth="299.0" style="-fx-background-color: #EBC4C0;" text="Utilisateurs" textAlignment="CENTER" textFill="#67405f" />
+            <JFXButton buttonType="RAISED" prefHeight="71.0" prefWidth="299.0" style="-fx-background-color: #EBC4C0;" text="Services" textAlignment="CENTER" textFill="#67405f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" prefHeight="72.0" prefWidth="299.0" style="-fx-background-color: #EBC4C0;" text="Packs" textAlignment="CENTER" textFill="#67405f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" prefHeight="72.0" prefWidth="299.0" style="-fx-background-color: #EBC4C0;" text="Reservation" textAlignment="CENTER" textFill="#67405f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" prefHeight="70.0" prefWidth="299.0" style="-fx-background-color: #EBC4C0;" text="Setting" textAlignment="CENTER" textFill="#67405f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <JFXButton layoutX="954.0" layoutY="257.0" onAction="#SupprimerPack" prefHeight="50.0" prefWidth="215.0" style="-fx-background-color: #EBC4C0; -fx-font-family: System bold; -fx-font-size: 16px;" text="Supprimer Pack" />
+      <JFXTextArea fx:id="desc" focusColor="#ffaeae" layoutX="326.0" layoutY="301.0" opacity="0.71" prefHeight="54.0" prefWidth="600.0" promptText="Description" unFocusColor="#ebc4c0" />
+      <JFXTextField fx:id="name" focusColor="#ffaeae" layoutX="329.0" layoutY="242.0" opacity="0.71" prefHeight="37.0" prefWidth="600.0" promptText="Nom Pack" unFocusColor="#ebc4c0" />
+      <JFXButton layoutX="325.0" layoutY="189.0" onAction="#uploadImage" prefHeight="40.0" prefWidth="179.0" style="-fx-background-color: #EBC4C0; -fx-font-size: 16px;" text="Upload Image" />
+      <JFXButton layoutX="953.0" layoutY="137.0" onAction="#onClickStatistique" prefHeight="50.0" prefWidth="215.0" style="-fx-background-color: #67405f; -fx-font-size: 16px;" text="Statistiques" />
+   </children>
+</AnchorPane>

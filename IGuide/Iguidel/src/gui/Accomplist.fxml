@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="789.0" prefWidth="1157.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.AccomplistController">
+   <children>
+      <Label fx:id="itemPackNom" alignment="CENTER" contentDisplay="CENTER" layoutX="274.0" layoutY="27.0" prefHeight="53.0" prefWidth="640.0" text="Compléter votre Réservation  " textFill="#67405f">
+         <font>
+            <Font name="Cambria Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label fx:id="itemPackNom1" alignment="CENTER" contentDisplay="CENTER" layoutX="127.0" layoutY="662.0" prefHeight="53.0" prefWidth="895.0" text="Choisissez votre Accompagnent pour cette reservation" textFill="#67405f">
+         <font>
+            <Font name="Cambria Italic" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="detailButton" layoutX="524.0" layoutY="715.0" mnemonicParsing="false" onAction="#close" prefHeight="60.0" prefWidth="139.0" style="-fx-background-color: #67405f; -fx-font-size: 18px;" styleClass="search-button" stylesheets="@../utils/Style.css" text="Ignorer" textAlignment="CENTER" textFill="WHITE" />
+      <ScrollPane focusTraversable="false" layoutX="38.0" layoutY="141.0" prefHeight="517.0" prefWidth="1097.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="141.0">
+         <content>
+            <GridPane fx:id="gridPackAcc" prefHeight="5.0" prefWidth="6.0" style="-fx-background-color: white;">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <JFXButton layoutX="1112.0" layoutY="27.0" onAction="#closeDialog" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: FF0000;" stylesheets="@../utils/Style.css" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Slider fx:id="slider" blockIncrement="100.0" layoutX="429.0" layoutY="96.0" max="200.0" onMouseClicked="#slidertarif" prefHeight="18.0" prefWidth="330.0" showTickLabels="true" showTickMarks="true" />
+   </children>
+</AnchorPane>

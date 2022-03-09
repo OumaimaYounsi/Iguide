@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="837.0" prefWidth="1118.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AdminfeedbackController">
+   <children>
+      <AnchorPane prefHeight="837.0" prefWidth="290.0" style="-fx-background-color: #EBC4C0;" />
+      <ImageView fitHeight="119.0" fitWidth="200.0" layoutX="27.0" layoutY="26.0">
+         <image>
+            <Image url="@../utils/Photo/272273434_976361596651019_8757673794751794817_n.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="289.0" layoutY="44.0" prefHeight="126.0" prefWidth="830.0" style="-fx-background-color: #EBC4C0;">
+         <children>
+            <Label layoutX="37.0" layoutY="25.0" prefHeight="21.0" prefWidth="193.0" text="/Administration/Feedback" textFill="#67405f">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="73.0" prefHeight="21.0" prefWidth="182.0" text="Feedbacks" textFill="#67405f">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="idf" layoutX="311.0" layoutY="235.0" prefHeight="31.0" prefWidth="421.0" promptText="id_feedback" />
+      <TextField fx:id="contenuf" layoutX="312.0" layoutY="289.0" prefHeight="31.0" prefWidth="421.0" promptText="contenu" />
+      <Button fx:id="modifierf" layoutX="909.0" layoutY="243.0" mnemonicParsing="false" onAction="#mod_feed" prefHeight="31.0" prefWidth="152.0" styleClass="buttom" stylesheets="@../utils/Style.css" text="Modifier FeedBack" textFill="WHITE" />
+      <Button fx:id="suprimerf" layoutX="910.0" layoutY="296.0" mnemonicParsing="false" onAction="#sup_feed" prefHeight="31.0" prefWidth="152.0" styleClass="buttom" stylesheets="@../utils/Style.css" text="Suprimer FeedBack" textFill="WHITE" />
+      <TableView fx:id="tfeedback" layoutX="297.0" layoutY="564.0" prefHeight="200.0" prefWidth="753.0">
+        <columns>
+          <TableColumn fx:id="id_fb" prefWidth="93.0" text="id_feedback" />
+          <TableColumn fx:id="conf" prefWidth="168.0" text="contenu" />
+            <TableColumn fx:id="datefeed" prefWidth="122.0" text="Date feedback" />
+            <TableColumn fx:id="idc" prefWidth="63.0" text="id_c" />
+            <TableColumn fx:id="ida" prefWidth="83.0" text="id_a" />
+            <TableColumn fx:id="idac" prefWidth="76.0" text="id_ac" />
+            <TableColumn fx:id="ids" prefWidth="73.0" text="id_s" />
+            <TableColumn fx:id="idp" prefWidth="66.0" text="id_p" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="ref" fitHeight="42.0" fitWidth="53.0" layoutX="1036.0" layoutY="777.0" onMouseClicked="#ref">
+         <image>
+            <Image url="@../utils/Photo/ref.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
