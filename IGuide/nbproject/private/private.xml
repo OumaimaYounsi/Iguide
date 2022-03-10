@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/gui/AcceilController.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/entities/q3.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/entities/Statut.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/entities/Accompagnant.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/entities/Resultattest.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/gui/CreeUnCompte.fxml</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/sevices/ServiceAdministrateur.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/entities/Proprietaire.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/utils/MyDB.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/test/IGuide.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/entities/q4.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/entities/Formulaire.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/sevices/IAccompagnant.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/gui/Login.fxml</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/gui/LoginFXMLController.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/entities/Client.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/sevices/ServiceAccompagnant.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/sevices/IAdministrateur.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/entities/q1.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/gui/CreeUnCompteController.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/entities/Gender.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/sevices/ServiceClient.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/entities/q5.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/entities/q2.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/entities/Administrateur.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/IGuide/src/gui/Acceil.fxml</file>
+        </group>
+    </open-files>
+</project-private>
